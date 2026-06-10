@@ -19,10 +19,24 @@
     <button type="button" id="themeToggle" onclick="toggleTheme()">Modo Escuro</button>
     <div class="centro">
         <h1>Freud Money Convert</h1>
-        <input type="number" placeholder="Real" id="real" class="input">
-        <input type="number" placeholder="Dólar" id="dolar" class="input" readonly>
+        <select id="moedaOrigem" class="select">
+            <option value="BRL">Real (BRL)</option>
+            <option value="USD">Dólar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">Libra Esterlina (GBP)</option>
+            <option value="JPY">Iene Japonês (JPY)</option>
+        </select>
+        <select id="moedaDestino" class="select">
+            <option value="USD">Dólar (USD)</option>
+            <option value="EUR">Euro (EUR)</option>
+            <option value="GBP">Libra Esterlina (GBP)</option>
+            <option value="JPY">Iene Japonês (JPY)</option>
+            <option value="BRL">Real (BRL)</option>
+        </select>
+        <input type="number" placeholder="Valor" id="valor" class="input" step="any">
+        <input type="text" placeholder="Resultado" id="resultado" class="input" readonly>
         <button type="button" onclick="converter()">Converter</button>
-        <button type="button" id="toggleButton" onclick="toggleMode()">Dólar → Real</button>
+        <button type="button" id="toggleButton" onclick="toggleMode()">Inverter</button>
     </div>
     <script src="script.js"></script>
 </body>
