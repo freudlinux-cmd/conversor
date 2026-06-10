@@ -16,11 +16,13 @@
     <meta name="msapplication-TileImage" content="imagens/freud-192.png">
 </head>
 <body>
+    <button type="button" id="themeToggle" onclick="toggleTheme()">Modo Escuro</button>
     <div class="centro">
         <h1>Freud Money Convert</h1>
         <input type="number" placeholder="Real" id="real" class="input">
-        <input type="number" placeholder="Dolar" id="dolar" class="input" readonly>
+        <input type="number" placeholder="Dólar" id="dolar" class="input" readonly>
         <button type="button" onclick="converter()">Converter</button>
+        <button type="button" id="toggleButton" onclick="toggleMode()">Dólar → Real</button>
     </div>
     <script src="script.js"></script>
 </body>
